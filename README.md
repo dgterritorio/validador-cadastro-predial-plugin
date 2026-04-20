@@ -21,11 +21,11 @@ Colocar aqui figuras..
 O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois separadores (Edição/Validação), dependendo se pretender, corrigir o ficheiro geopackage ou verificar a sua conformidade.
 
 # Separador Edição
+Esta opção permite corrigir inconsistências nos polígonos.
 
 <img width="717" height="695" alt="image" src="https://github.com/user-attachments/assets/d8c3b01c-0f16-4400-94ac-54147816cdf8" />
 
 # Edição do ficheiro geopackage
-Esta opção permite corrigir inconsistências nos polígonos.
 
 Sobre o ficheiro geopackage submetido são realizadas um conjunto de correções automáticas com o objetivo de eliminar o maior número de inconsistências possível.
 
