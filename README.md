@@ -1,9 +1,9 @@
 # validador-cadastro-predial-plugin
-validador-cadastro-predial-plugin
+
 
 # Plugin QGIS para validar os dados no ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial
 
-Para apoio aos Técnicos de Cadastro Predial (TCP) nas operações de conservação cadastral na preparação do ficheiro geopackage a submeter na Plataforma de Conservação de Cadastro Predial, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
+Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na Plataforma de Conservação de Cadastro Predial, no âmbito das operações de conservação cadastral, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
 
 Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro geopackage, permitindo identificar as situações não conformes e também corrigir essas inconsistências de forma automática. 
 
@@ -91,7 +91,7 @@ Validações geométricas:
 * Duplicados
 * Sobreposições
 * Lacunas
-•	Confinantes
+* Confinantes
 
 # Utilização do separador Validação
 * Aceder ao separador Validação.
@@ -102,11 +102,13 @@ Validações geométricas:
 * Clicar em “Geopackage a Submeter” para Identificar o ficheiro geopackage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
+* Exemplo de mensagem sem erros identificados:
+  
   <img width="661" height="661" alt="image" src="https://github.com/user-attachments/assets/49e339e5-0c2d-4d0b-8e0a-cb033a59410f" />
+
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
 * Os dados submetidos são adicionados ao grupo "submetidos" do projeto QGIS.
 * As inconsistências detetadas são materializadas em ficheiros geopackage, temporários, e adicionados ao grupo "resultados" do projeto QGIS.
-
 
 # Descrição de cada uma das validações
 # Validações não geométricas
