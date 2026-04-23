@@ -47,30 +47,30 @@ Correções automáticas:
 
 # Descrição sobre cada uma das correções:
 
-# Remover vértices duplicados
-Elimina vértices (nós) duplicados de cada geometria, garantindo que não resultem geometrias não válidas. O procedimento implica a utilização de uma tolerância, neste caso 0, que determina quando os vértices são iguais.
+  # Remover vértices duplicados
+  Elimina vértices (nós) duplicados de cada geometria, garantindo que não resultem geometrias não válidas. O procedimento implica a utilização de uma tolerância, neste caso 0, que determina quando os vértices são iguais.
 
-# Corrigir geometrias inválidas
-Garantir que todas as geometrias representadas no ficheiro geopackage submetido são válidas.
-Tipos de erros mais comuns:
-* Auto intersecção (Quando o anel exterior ou interior cruza-se a si próprio). (Por exemplo: laços)
-* Anéis invertidos (anel interno com sentido contrário ao do anel exterior).
-Em alguns casos, geometrias muito complexas podem exigir edição manual após a correção automática.
+  # Corrigir geometrias inválidas
+  Garantir que todas as geometrias representadas no ficheiro geopackage submetido são válidas.
+  Tipos de erros mais comuns:
+  * Auto intersecção (Quando o anel exterior ou interior cruza-se a si próprio). (Por exemplo: laços)
+  * Anéis invertidos (anel interno com sentido contrário ao do anel exterior).
+  Em alguns casos, geometrias muito complexas podem exigir edição manual após a correção automática.
 
-# Ajustar as geometrias dos polígonos
-O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os limites de polígonos vizinhos. Se os limites não se tocam exatamente adiciona novos vértices nos segmentos vizinhos de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
+  # Ajustar as geometrias dos polígonos
+  O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os limites de           polígonos vizinhos. Se os limites não se tocam exatamente adiciona novos vértices nos segmentos vizinhos de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
 
-# Ajustar as geometrias submetidas entre si
-Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geopackage submetido. É realizado um ajuste entre as geometrias da própria camada, e com todas as restantes camadas.
+  # Ajustar as geometrias submetidas entre si
+  Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geopackage submetido. É realizado um ajuste entre as geometrias da própria camada, e com todas as   restantes camadas.
 
-# Ajustar as geometrias dos confinantes submetidos aos confinantes originais
-Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos confinantes originais.
+  # Ajustar as geometrias dos confinantes submetidos aos confinantes originais
+  Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos   confinantes originais.
 
-# Ficheiro GeoPackage corrigido
-Como resultado dos procedimentos automáticos aplicados, o novo ficheiro geopackage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
+  # Ficheiro GeoPackage corrigido
+  Como resultado dos procedimentos automáticos aplicados, o novo ficheiro geopackage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
 
 
-# Separador Validação
+# Separador de Validação
 Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial
 
 <img width="716" height="691" alt="image" src="https://github.com/user-attachments/assets/c9dd2e3a-bffe-481b-956b-103eb587ce1a" />
