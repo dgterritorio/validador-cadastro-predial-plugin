@@ -102,9 +102,15 @@ Validações geométricas:
 * Clicar em “Geopackage a Submeter” para Identificar o ficheiro geopackage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
-* Exemplo de mensagem sem erros identificados:
+
   
-  <img width="661" height="661" alt="image" src="https://github.com/user-attachments/assets/49e339e5-0c2d-4d0b-8e0a-cb033a59410f" />
+  <img width="549" height="433" alt="image" src="https://github.com/user-attachments/assets/a01b99da-f841-4872-b2e3-fa3e7c38a0e9" />
+
+  
+  <img width="551" height="513" alt="image" src="https://github.com/user-attachments/assets/369e7bbb-8c23-434b-87e5-4e8d1121eeaa" />
+
+
+
 
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
 * Os dados submetidos são adicionados ao grupo "submetidos" do projeto QGIS.
