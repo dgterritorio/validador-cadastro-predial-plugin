@@ -7,6 +7,12 @@ Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro g
 
 Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro geopackage, permitindo identificar as situações não conformes e também corrigir essas inconsistências de forma automática. 
 
+# Requisitos
+O plugin deve ser instalado numa versão do QGIS 3.40 ou superior.
+
+# Baixe o plugin CadEditCheck_CNS
+O plugin está disponível em [Download do plugin v1.0.0]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V1.0.0/CadEditCheck_CNS.zip)
+
 # Instalar o plugin
 Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar plugins...
 1.	Escolha a opção "Instalar de um ZIP"
