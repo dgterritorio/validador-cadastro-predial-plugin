@@ -107,7 +107,6 @@ Validações geométricas:
 * Dimensão 2D
 * Geometria válida
 * Tipo de geometria
-* Registos sem geometria
 * Vértices duplicados/redundantes
 * Duplicados
 * Sobreposições
@@ -147,6 +146,14 @@ Verificar se o sistema de referência de cada camada gráfica submetida é o sis
 ### Número e nome de camadas gráficas
 Verificar se o ficheiro submetido contém as camadas gráficas definidas. O ficheiro submetido deve conter as seis camadas gráficas: predio, confinantes, area_nao_cadastrada, dominio_publico, dominio_publico_confinante, adicionais). A camada gráfica adicionais não é validada, uma vez que não é considerada para efeitos de integração na Carta Cadastral. Esta camada tem como objetivo auxiliar na preparação do ficheiro GeoPackage a subemeter.
 
+### Registos sem geometria
+Verificar se o ficheiro submetido existem registos sem geometria associada.
+
+### Número de confinantes submetidos igual ao número de confinantes originais
+Verificar se no ficheiro submetido o número de confinantes é igual ao número de confinantes do ficheiro original. O número de confinantes da camada confinantes submetida tem de ser igual ao número de confinantes da camada correspondente original.
+
+### Geopackage submetido igual ao original
+Verificar se no ficheiro submetido ´exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
 
 ## Validações geométricas
 
