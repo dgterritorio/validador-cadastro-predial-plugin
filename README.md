@@ -94,6 +94,9 @@ Validações não geométricas:
 * Formato 
 * Sistema de referência
 * Número e nome das camadas gráficas
+* Registos sem geometria
+* Número de confinantes submetidos igual ao número de confinantes originais
+* Geopackage submetido igual ao original
 
 Validações geométricas:
 * Dimensão 2D
