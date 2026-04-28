@@ -23,9 +23,12 @@ O plugin depois de instalado fica disponível no menu Plugins.
 
 <img width="886" height="144" alt="image" src="https://github.com/user-attachments/assets/e6abf1c8-39e1-4a21-83a7-245f610157d5" />
 
+
 <img width="886" height="398" alt="image" src="https://github.com/user-attachments/assets/9388cf4e-f523-4aec-95be-8635ddd2663c" />
 
+
 <img width="886" height="397" alt="image" src="https://github.com/user-attachments/assets/0b04c690-6e7e-4b5e-9c6d-44a0e6298b74" />
+
 
 
 # Utilização do plugin
@@ -132,6 +135,7 @@ Validações geométricas:
 
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
 * Os dados submetidos são adicionados ao grupo "submetidos" do projeto QGIS.
+* Quando são detetadas inconsistências do tipo “não geométricas” não são executadas as validações geométricas. Primeiro será necessário corrigir essas situações, e só depois submeter o ficheiro a   nova validação.
 * As inconsistências detetadas são materializadas em ficheiros geopackage, temporários, e adicionados ao grupo "resultados" do projeto QGIS.
 
 ## Descrição de cada uma das validações
@@ -147,13 +151,13 @@ Verificar se o sistema de referência de cada camada gráfica submetida é o sis
 Verificar se o ficheiro submetido contém as camadas gráficas definidas. O ficheiro submetido deve conter as seis camadas gráficas: predio, confinantes, area_nao_cadastrada, dominio_publico, dominio_publico_confinante, adicionais). A camada gráfica adicionais não é validada, uma vez que não é considerada para efeitos de integração na Carta Cadastral. Esta camada tem como objetivo auxiliar na preparação do ficheiro GeoPackage a subemeter.
 
 ### Registos sem geometria
-Verificar se o ficheiro submetido existem registos sem geometria associada.
+Verificar se no ficheiro submetido existem registos nas tabelas sem geometria associada. Não são aceites registos nas tabelas sem geometria associada.
 
 ### Número de confinantes submetidos igual ao número de confinantes originais
 Verificar se no ficheiro submetido o número de confinantes é igual ao número de confinantes do ficheiro original. O número de confinantes da camada confinantes submetida tem de ser igual ao número de confinantes da camada correspondente original.
 
 ### Geopackage submetido igual ao original
-Verificar se no ficheiro submetido ´exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
+Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
 
 ## Validações geométricas
 
@@ -168,9 +172,6 @@ intersecções, nem auto contatos). Não são aceites geometrias não válidas.
 ### Tipo de geometria
 Verificar se as geometrias das camadas gráficas submetidas não apresentam mais do que um polígono com o mesmo registo na tabela de atributos (multipart polygons).
 Não são aceites multipolígonos, apenas são aceites geometrias do tipo polygon.
-
-### Registos sem geometria
-Verificar se no ficheiro submetido existem registos nas tabelas sem geometria associada. Não são aceites registos nas tabelas sem geometria associada.
 
 ### Duplicados
 Verificar se as geometrias das camadas gráficas submetidas não se encontram duplicadas. Não são aceites geometrias duplicadas.
