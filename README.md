@@ -22,13 +22,8 @@ Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar p
 O plugin depois de instalado fica disponível no menu Plugins.
 
 <img width="886" height="144" alt="image" src="https://github.com/user-attachments/assets/e6abf1c8-39e1-4a21-83a7-245f610157d5" />
-
-
 <img width="886" height="398" alt="image" src="https://github.com/user-attachments/assets/9388cf4e-f523-4aec-95be-8635ddd2663c" />
-
-
 <img width="886" height="397" alt="image" src="https://github.com/user-attachments/assets/0b04c690-6e7e-4b5e-9c6d-44a0e6298b74" />
-
 
 
 # Utilização do plugin
@@ -158,6 +153,7 @@ Verificar se no ficheiro submetido o número de confinantes é igual ao número 
 
 ### Geopackage submetido igual ao original
 Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
+
 
 ## Validações geométricas
 
