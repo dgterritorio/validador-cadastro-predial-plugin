@@ -48,6 +48,7 @@ Correções automáticas:
  * Corrigir geometrias inválidas.
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
  * Converter as geometrias do geopackage de 3D para 2D.
+ * Remover registos sem geometria.
 
 ## Utilização do separador Edição
 * Aceder ao separador Edição.
@@ -56,6 +57,7 @@ Correções automáticas:
 * Clicar em “Geopackage a Corrigir” para Identificar o ficheiro geopackage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é adicionado ao projeto QGIS o novo geopackage.
+* O novo geopackage é guardado na mesma pasta do geopackage submetido, com a designação do submetido mais "_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
@@ -77,6 +79,9 @@ Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros
 
 ### Ajustar as geometrias dos confinantes submetidos aos confinantes originais
 Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos   confinantes originais.
+
+### Remover registos sem geometria
+Na situação de existirem registos sem geometria associada estes são eliminados.
 
 ### Ficheiro GeoPackage corrigido
 Como resultado dos procedimentos automáticos aplicados, o novo ficheiro geopackage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
