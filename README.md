@@ -53,10 +53,10 @@ Correções automáticas:
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
 * Clicar em “Geopackage Original” para identificar o ficheiro geopackage com a representação dos dados originais disponibilizado na Plataforma de Conservação.
-* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro geopackage com a representação dos novos dados.
+* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro geopackage com a representação dos novos dados a corrigir.
 * Para executar clicar em “OK”.
-* Como resultado é adicionado ao projeto QGIS o novo geopackage.
-* O novo geopackage é guardado na mesma pasta do geopackage submetido, com a designação do submetido mais "_corrigido.gpkg".
+* Como resultado é adicionado ao projeto QGIS o novo geopackage corrigido.
+* O novo geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" mais "_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
