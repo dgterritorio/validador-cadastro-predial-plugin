@@ -28,26 +28,25 @@ O plugin depois de instalado fica disponível no menu Plugins.
 
 
 # Utilização do plugin
-O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois separadores (Edição/Validação), dependendo se pretender, corrigir o ficheiro geopackage ou verificar a sua conformidade.
+O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois separadores (Edição/Validação), dependendo se pretender, corrigir o ficheiro Geopackage ou verificar a sua conformidade.
 
 # Separador Edição
 Esta opção permite corrigir inconsistências nos polígonos.
 
-#<img width="886" height="798" alt="image" src="https://github.com/user-attachments/assets/054f9103-a45e-4bf8-ac18-2c03b72c37d1" />
 <img width="443" height="394" alt="image" src="https://github.com/user-attachments/assets/054f9103-a45e-4bf8-ac18-2c03b72c37d1" />
 
 
 ## Edição do ficheiro geopackage
 
-Sobre o ficheiro geopackage a corrigir são realizadas um conjunto de correções automáticas com o objetivo de eliminar o maior número de inconsistências possível.
+Sobre o ficheiro Geopackage a corrigir são realizadas um conjunto de correções automáticas com o objetivo de eliminar o maior número de inconsistências possível.
 
 Correções automáticas:
- * Ajustar as geometrias entre si do ficheiro geopackage a corrigir.
+ * Ajustar as geometrias entre si do ficheiro Geopackage a corrigir.
  * Ajustar as geometrias dos confinantes a corrigir aos confinantes originais.
  * Remover vértices duplicados.
  * Corrigir geometrias inválidas.
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
- * Converter as geometrias do geopackage de 3D para 2D.
+ * Converter as geometrias do Geopackage de 3D para 2D.
  * Remover registos sem geometria.
 
 ## Utilização do separador Edição
