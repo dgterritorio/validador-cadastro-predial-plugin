@@ -64,17 +64,17 @@ Correções automáticas:
 Elimina vértices (nós) duplicados de cada geometria, garantindo que não resultem geometrias não válidas. O procedimento implica a utilização de uma tolerância, neste caso 0, que determina quando os vértices são iguais.
 
 ### Corrigir geometrias inválidas
-Garantir que todas as geometrias representadas no ficheiro geopackage submetido são válidas.
+Garantir que todas as geometrias representadas no ficheiro geopackage a corrigir são válidas.
   Tipos de erros mais comuns:
   * Auto intersecção (Quando o anel exterior ou interior cruza-se a si próprio). (Por exemplo: laços)
   * Anéis invertidos (anel interno com sentido contrário ao do anel exterior).
   Em alguns casos, geometrias muito complexas podem exigir edição manual após a correção automática.
 
 ### Ajustar as geometrias dos polígonos
-O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os limites de           polígonos vizinhos. Se os limites não se tocam exatamente adiciona novos vértices nos segmentos vizinhos de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
+O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partiharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
 
 ### Ajustar as geometrias submetidas entre si
-Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geopackage submetido. É realizado um ajuste entre as geometrias da própria camada, e com todas as   restantes camadas.
+Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geopackage a corrigir. É realizado um ajuste entre as geometrias da própria camada, e com todas as  restantes camadas.
 
 ### Ajustar as geometrias dos confinantes submetidos aos confinantes originais
 Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos   confinantes originais.
