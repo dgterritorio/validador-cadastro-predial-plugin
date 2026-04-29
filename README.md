@@ -52,11 +52,11 @@ Correções automáticas:
 ## Utilização do separador Edição
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
-* Clicar em “Geopackage Original” para identificar o ficheiro geopackage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
-* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro geopackage com a representação dos novos dados a corrigir.
+* Clicar em “Geopackage Original” para identificar o ficheiro Geopackage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
+* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro Geopackage com a representação dos novos dados a corrigir.
 * Para executar clicar em “OK”.
-* Como resultado é adicionado ao projeto QGIS o novo geopackage corrigido.
-* O novo geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
+* Como resultado é adicionado ao projeto QGIS o novo Geopackage corrigido.
+* O novo Geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
@@ -64,11 +64,11 @@ Correções automáticas:
 Elimina vértices (nós) duplicados de cada geometria, garantindo que não resultem geometrias não válidas. O procedimento implica a utilização de uma tolerância, neste caso 0, que determina quando os vértices são iguais.
 
 ### Corrigir geometrias inválidas
-Garantir que todas as geometrias representadas no ficheiro geopackage a corrigir são válidas.
+Garantir que todas as geometrias representadas no ficheiro Geopackage a corrigir são válidas.
   Tipos de erros mais comuns:
   * Auto intersecção (Quando o anel exterior ou interior cruza-se a si próprio). (Por exemplo: laços)
   * Anéis invertidos (anel interno com sentido contrário ao do anel exterior).
-  Em alguns casos, geometrias muito complexas podem exigir edição manual após a correção automática.
+  Em alguns casos, geometrias muito complexas podem exigir uma edição manual após a correção automática.
 
 ### Ajustar as geometrias dos polígonos
 O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partiharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
