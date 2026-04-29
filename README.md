@@ -56,7 +56,7 @@ Correções automáticas:
 * Clicar em “Geopackage a Corrigir” para Identificar o ficheiro geopackage com a representação dos novos dados a corrigir.
 * Para executar clicar em “OK”.
 * Como resultado é adicionado ao projeto QGIS o novo geopackage corrigido.
-* O novo geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" mais "_corrigido.gpkg".
+* O novo geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" + "_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
