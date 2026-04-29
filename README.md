@@ -1,9 +1,9 @@
 # validador-cadastro-predial-plugin
 
 
-## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial do Sistema Nacional de Informação Cadastral (SNIC)
+## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial do Sistema Nacional de Informação Cadastral [SNIC](https://www.dgterritorio.gov.pt/snic)
 
-Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na Plataforma de Conservação de Cadastro Predial, no âmbito das operações de conservação cadastral, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
+Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na [Plataforma de Conservação de Cadastro Predial](https://snic.dgterritorio.gov.pt/CNS/#/pt-PT/0/CNS/Home), no âmbito das operações de conservação cadastral, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
 
 Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro geopackage, permitindo identificar as situações não conformes e também corrigir essas inconsistências de forma automática. 
 
