@@ -1,7 +1,7 @@
 # validador-cadastro-predial-plugin
 
 
-## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial
+## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial do Sistema Nacional de Informação Cadastral (SNIC)
 
 Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na Plataforma de Conservação de Cadastro Predial, no âmbito das operações de conservação cadastral, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
 
@@ -16,7 +16,7 @@ O plugin está disponível em [CadEditCheck_CNS]( https://github.com/dgterritori
 ## Instalar o plugin
 Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar plugins...
 1.	Escolha a opção "Instalar de um ZIP"
-2.	Escolha o arquivo validador_cns.zip em "Ficheiro ZIP:"
+2.	Escolha o arquivo CadEditCheck_CNS.zip em "Ficheiro ZIP:"
 3.	Procedimento de instalação, pressionando o botão Instalar plugin
 
 O plugin depois de instalado fica disponível no menu Plugins.
