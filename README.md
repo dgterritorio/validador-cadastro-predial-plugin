@@ -41,8 +41,8 @@ Esta opção permite corrigir inconsistências nos polígonos.
 Sobre o ficheiro geopackage a corrigir são realizadas um conjunto de correções automáticas com o objetivo de eliminar o maior número de inconsistências possível.
 
 Correções automáticas:
- * Ajustar as geometrias entre si do ficheiro geopackage submetido.
- * Ajustar as geometrias dos confinantes submetidos aos confinantes originais.
+ * Ajustar as geometrias entre si do ficheiro geopackage a corrigir.
+ * Ajustar as geometrias dos confinantes a corrigir aos confinantes originais.
  * Remover vértices duplicados.
  * Corrigir geometrias inválidas.
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
@@ -52,11 +52,11 @@ Correções automáticas:
 ## Utilização do separador Edição
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
-* Clicar em “Geopackage Original” para identificar o ficheiro geopackage com a representação dos dados originais disponibilizado na Plataforma de Conservação.
+* Clicar em “Geopackage Original” para identificar o ficheiro geopackage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
 * Clicar em “Geopackage a Corrigir” para Identificar o ficheiro geopackage com a representação dos novos dados a corrigir.
 * Para executar clicar em “OK”.
 * Como resultado é adicionado ao projeto QGIS o novo geopackage corrigido.
-* O novo geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" + "_corrigido.gpkg".
+* O novo geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
