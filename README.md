@@ -5,7 +5,7 @@
 
 Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na [Plataforma de Conservação de Cadastro Predial](https://snic.dgterritorio.gov.pt/CNS/#/pt-PT/0/CNS/Home), no âmbito das operações de conservação cadastral, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
 
-Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro geopackage, permitindo identificar as situações não conformes e também corrigir essas inconsistências de forma automática. 
+Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro Geopackage, permitindo a deteção de inconformidades topológicas, bem como a sua correção automática. 
 
 ## Requisitos
 O plugin deve ser instalado numa versão do QGIS 3.40 ou superior.
