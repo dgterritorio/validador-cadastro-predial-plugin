@@ -3,7 +3,7 @@
 
 ## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial do Sistema Nacional de Informação Cadastral [SNIC](https://www.dgterritorio.gov.pt/snic)
 
-Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na [Plataforma de Conservação de Cadastro Predial](https://snic.dgterritorio.gov.pt/CNS/#/pt-PT/0/CNS/Home), no âmbito das operações de conservação cadastral, é disponibilizado pela Direção-Geral do Território um plugin para o software livre QGIS.
+Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na [Plataforma de Conservação de Cadastro Predial](https://snic.dgterritorio.gov.pt/CNS/#/pt-PT/0/CNS/Home), no âmbito das operações de conservação cadastral, é disponibilizado pela **Direção-Geral do Território** um plugin para o software livre QGIS.
 
 Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro Geopackage, permitindo a deteção de inconformidades topológicas, bem como a sua correção automática. 
 
@@ -19,7 +19,7 @@ Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar p
 2.	Escolha o arquivo CadEditCheck_CNS.zip em "Ficheiro ZIP:"
 3.	Procedimento de instalação, pressionando o botão Instalar plugin
 
-O plugin depois de instalado fica disponível no menu Plugins.
+O plugin depois de instalado fica disponível no menu **Plugins**.
 
 <img width="443" height="74" alt="image" src="https://github.com/user-attachments/assets/e6abf1c8-39e1-4a21-83a7-245f610157d5" />
 </p>
@@ -68,6 +68,7 @@ Garantir que todas as geometrias representadas no ficheiro Geopackage a corrigir
   Tipos de erros mais comuns:
   * Auto intersecção
   * Auto contato
+
   Em alguns casos, geometrias muito complexas podem exigir uma edição manual após a correção automática.
 
 ### Ajustar as geometrias dos polígonos
