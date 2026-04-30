@@ -1,4 +1,4 @@
-# validador-cadastro-predial-plugin
+# CadastroPredialDGT
 
 
 ## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial do Sistema Nacional de Informação Cadastral [SNIC](https://www.dgterritorio.gov.pt/snic)
