@@ -151,9 +151,9 @@ Verificar se no ficheiro submetido o número de confinantes é igual ao número 
 
 ### Geopackage submetido igual ao original
 Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
-</p>
-### Mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
-</p>  
+
+#### Mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
+
 <img width="252" height="184" alt="image" src="https://github.com/user-attachments/assets/61318735-befd-4124-8dfc-ed414b32ce8d" />
 </p>
 
