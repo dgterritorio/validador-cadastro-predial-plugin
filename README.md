@@ -123,7 +123,7 @@ Validações geométricas:
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 
 </p>
-<img width="886" height="920" alt="image" src="https://github.com/user-attachments/assets/1d05d0b2-acd7-431e-8e0d-656e64b84b90" />
+<img width="443" height="460" alt="image" src="https://github.com/user-attachments/assets/1d05d0b2-acd7-431e-8e0d-656e64b84b90" />
 </p>
 
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
@@ -151,10 +151,10 @@ Verificar se no ficheiro submetido o número de confinantes é igual ao número 
 
 ### Geopackage submetido igual ao original
 Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
-
-* Mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
+</p>
+### Mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
 </p>  
-<img width="504" height="368" alt="image" src="https://github.com/user-attachments/assets/61318735-befd-4124-8dfc-ed414b32ce8d" />
+<img width="252" height="184" alt="image" src="https://github.com/user-attachments/assets/61318735-befd-4124-8dfc-ed414b32ce8d" />
 </p>
 
 ## Validações geométricas
