@@ -153,10 +153,9 @@ Verificar se no ficheiro submetido o número de confinantes é igual ao número 
 Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
 
 #### Mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
-
-<img width="252" height="184" alt="image" src="https://github.com/user-attachments/assets/61318735-befd-4124-8dfc-ed414b32ce8d" />
 </p>
-
+<img width="394" height="288" alt="image" src="https://github.com/user-attachments/assets/a7ee8246-5cfd-4d39-b674-1884c063e08c" />
+</p>
 ## Validações geométricas
 
 ### Dimensão 2D
