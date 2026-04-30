@@ -156,6 +156,7 @@ Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O f
 </p>
 <img width="394" height="288" alt="image" src="https://github.com/user-attachments/assets/a7ee8246-5cfd-4d39-b674-1884c063e08c" />
 </p>
+
 ## Validações geométricas
 
 ### Dimensão 2D
