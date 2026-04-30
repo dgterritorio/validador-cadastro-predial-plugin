@@ -159,8 +159,8 @@ Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O f
 ## Validações geométricas
 
 ### Dimensão 2D
-  Verificar se o ficheiro submetido tem as geometrias representadas a 2D.
-  Não são aceites ficheiros com dimensão 3D.
+Verificar se o ficheiro submetido tem as geometrias representadas a 2D.
+Não são aceites ficheiros com dimensão 3D.
 
 ### Geometria válida
 Verificar se os polígonos das camadas gráficas submetidas são geometricamente válidos (por exemplo: não têm auto
@@ -168,16 +168,16 @@ intersecções, nem auto contatos). Não são aceites geometrias não válidas.
 
 ### Tipo de geometria
 Verificar se as geometrias das camadas gráficas submetidas não apresentam mais do que um polígono com o mesmo registo na tabela de atributos (multipart polygons).
-Não são aceites multipolígonos, apenas são aceites geometrias do tipo polygon.
+Não são aceites multipolígonos, apenas são aceites geometrias do tipo 'polygon'.
 
 ### Duplicados
 Verificar se as geometrias das camadas gráficas submetidas não se encontram duplicadas. Não são aceites geometrias duplicadas.
 
 ### Sobreposições
-Verificar se as geometrias das camadas gráficas submetidas não se sobrepõem (deverá estar preparado para considerar uma tolerância). Não são aceites sobreposições.
+Verificar se as geometrias das camadas gráficas submetidas não se sobrepõem. Não são aceites sobreposições.
 
 ### Lacunas
-Verificar se as geometrias das camadas gráficas submetidas (predio, confinantes, area_nao_cadastrada e dominio_publico) ” devem preencher a totalidade da área das geometrias da camada original predio. (considerar uma tolerância, definida pelo critério da espessura). Não são aceites lacunas acima da tolerância.
+Verificar se as geometrias das camadas gráficas submetidas (predio, confinantes, area_nao_cadastrada e dominio_publico) preenchem a totalidade da área das geometrias da camada original "predio". (considerar uma tolerância, definida pelo critério da espessura). Não são aceites lacunas acima da tolerância.
 
 ### Vértices duplicados 
 Verificar se as geometrias das camadas gráficas apresentam vértices em duplicado. São considerados vértices em duplicado, quando na mesma geometria existam vértices com as mesmas coordenadas (coordenadas são exatamente iguais, utilizando como referência 15 casas decimais). Não são aceites geometrias com vértices duplicados abaixo da tolerância.
