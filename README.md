@@ -66,8 +66,8 @@ Elimina vértices (nós) duplicados de cada geometria, garantindo que não resul
 ### Corrigir geometrias inválidas
 Garantir que todas as geometrias representadas no ficheiro Geopackage a corrigir são válidas.
   Tipos de erros mais comuns:
-  * Auto intersecção (Quando o anel exterior ou interior cruza-se a si próprio). (Por exemplo: laços)
-  * Anéis invertidos (anel interno com sentido contrário ao do anel exterior).
+  * Auto intersecção
+  * Auto contato
   Em alguns casos, geometrias muito complexas podem exigir uma edição manual após a correção automática.
 
 ### Ajustar as geometrias dos polígonos
