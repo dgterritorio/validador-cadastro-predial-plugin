@@ -16,7 +16,7 @@ O plugin está disponível em [CadastroPredialDGT]( https://github.com/dgterrito
 ## Instalar o plugin
 Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar plugins...
 1.	Escolha a opção "Instalar de um ZIP"
-2.	Escolha o arquivo CadEditCheck_CNS.zip em "Ficheiro ZIP:"
+2.	Escolha o arquivo CadastroPredialDGT.zip em "Ficheiro ZIP:"
 3.	Procedimento de instalação, pressionando o botão Instalar plugin
 
 O plugin depois de instalado fica disponível no menu **Plugins**.
