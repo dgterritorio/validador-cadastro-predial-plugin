@@ -3,15 +3,15 @@
 
 ## Plugin QGIS para validar os dados do ficheiro Geopackage a submeter na Plataforma de Conservação de Cadastro Predial do Sistema Nacional de Informação Cadastral [SNIC](https://www.dgterritorio.gov.pt/snic)
 
-Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro geopackage a submeter na [Plataforma de Conservação de Cadastro Predial](https://snic.dgterritorio.gov.pt/CNS/#/pt-PT/0/CNS/Home), no âmbito das operações de conservação cadastral, é disponibilizado pela **Direção-Geral do Território** um plugin para o software livre QGIS.
+Para apoio aos Técnicos de Cadastro Predial (TCP) na preparação do ficheiro GeoPacKage a submeter na [Plataforma de Conservação de Cadastro Predial](https://snic.dgterritorio.gov.pt/CNS/#/pt-PT/0/CNS/Home), no âmbito das operações de conservação cadastral, é disponibilizado pela **Direção-Geral do Território** um plugin para o software livre QGIS.
 
-Este plugin permite auxiliar o Técnico de Cadastro Predial na preparação do ficheiro Geopackage, permitindo a deteção de inconformidades topológicas, bem como a sua correção automática. 
+Este plugin auxilia o Técnico de Cadastro Predial na preparação do ficheiro GeoPacKage, permitindo a deteção de inconformidades topológicas e a sua correção automática.
 
 ## Requisitos
 O plugin deve ser instalado numa versão do QGIS 3.40 ou superior.
 
 ## Baixe o plugin CadEditCheck_CNS
-O plugin está disponível em [CadEditCheck_CNS]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V1.0.0/CadEditCheck_CNS.zip)
+O plugin está disponível em [CadastroPredialDGT]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V1.0.0/CadEditCheck_CNS.zip)
 
 ## Instalar o plugin
 Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar plugins...
@@ -28,35 +28,35 @@ O plugin depois de instalado fica disponível no menu **Plugins**.
 
 
 # Utilização do plugin
-O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois separadores (Edição/Validação), dependendo se pretender, corrigir o ficheiro Geopackage ou verificar a sua conformidade.
+O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois separadores (Edição/Validação), dependendo se pretender, corrigir o ficheiro GeoPacKage ou verificar a sua conformidade.
 
 # Separador Edição
-Esta opção permite corrigir inconsistências nos polígonos.
-
-<img width="443" height="394" alt="image" src="https://github.com/user-attachments/assets/054f9103-a45e-4bf8-ac18-2c03b72c37d1" />
-
+Esta opção permite corrigir inconsistências topológicas nos polígonos.
+</p>
+<img width="443" height="382" alt="image" src="https://github.com/user-attachments/assets/e5944d06-16f8-4a92-8b43-9cbeee3cd557" />
+</p>
 
 ## Edição do ficheiro geopackage
 
 Sobre o ficheiro Geopackage a corrigir são realizadas um conjunto de correções automáticas com o objetivo de eliminar o maior número de inconsistências possível.
 
 Correções automáticas:
- * Ajustar as geometrias entre si do ficheiro Geopackage a corrigir.
+ * Ajustar as geometrias entre si do ficheiro GeoPacKage a corrigir.
  * Ajustar as geometrias dos confinantes a corrigir aos confinantes originais.
  * Remover vértices duplicados.
  * Corrigir geometrias inválidas.
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
- * Converter as geometrias do Geopackage de 3D para 2D.
+ * Converter as geometrias do GeoPacage de 3D para 2D.
  * Remover registos sem geometria.
 
 ## Utilização do separador Edição
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
-* Clicar em “Geopackage Original” para identificar o ficheiro Geopackage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
-* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro Geopackage com a representação dos novos dados a corrigir.
+* Clicar em “Geopackage Original” para identificar o ficheiro GeoPacKage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
+* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro GeoPacKage com a representação dos novos dados a corrigir.
 * Para executar clicar em “OK”.
-* Como resultado é adicionado ao projeto QGIS o novo Geopackage corrigido.
-* O novo Geopackage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
+* Como resultado é adicionado ao projeto QGIS o novo GeoPacKage corrigido.
+* O novo GeoPacKage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "Geopackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
@@ -75,24 +75,24 @@ Garantir que todas as geometrias representadas no ficheiro Geopackage a corrigir
 O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partiharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
 
 ### Ajustar as geometrias submetidas entre si
-Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geopackage a corrigir. É realizado um ajuste entre as geometrias da própria camada, e com todas as  restantes camadas.
+Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geoPacKage a corrigir. É realizado um ajuste entre as geometrias da própria camada, e com todas as  restantes camadas.
 
 ### Ajustar as geometrias dos confinantes submetidos aos confinantes originais
-Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos   confinantes originais.
+Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos confinantes originais.
 
 ### Remover registos sem geometria
 Na situação de existirem registos sem geometria associada estes são eliminados.
 
-### Ficheiro GeoPackage corrigido
-Como resultado dos procedimentos automáticos aplicados, o novo ficheiro geopackage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
+### Ficheiro GeoPacKage corrigido
+Como resultado dos procedimentos automáticos aplicados, o novo ficheiro geoPacKage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
 
 
 # Separador de Validação
 Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial
-</p>
-<img width="443" height="401" alt="image" src="https://github.com/user-attachments/assets/5a8b2254-0dbd-4a9a-b213-01b6de8194c9" />
-</p>
 
+</p>
+<img width="443" height="383" alt="image" src="https://github.com/user-attachments/assets/3a5f0992-850a-478e-bc78-2883307d035b" />
+</p>
 As Validações geometricas e não geométricas a efetuar sobre o ficheiro GeoPackage a submeter abrangem os seguintes parâmetros:
 
 Validações não geométricas:
