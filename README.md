@@ -11,7 +11,7 @@ Este plugin auxilia o Técnico de Cadastro Predial na preparação do ficheiro G
 O plugin deve ser instalado numa versão do QGIS 3.40 ou superior.
 
 ## Baixe o plugin CadEditCheck_CNS
-O plugin está disponível em [CadastroPredialDGT]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V1.0.0/CadEditCheck_CNS.zip)
+O plugin está disponível em [CadastroPredialDGT]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V1.0.0/CadastroPredialDGT.zip)
 
 ## Instalar o plugin
 Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar plugins...
@@ -89,13 +89,13 @@ Como resultado dos procedimentos automáticos aplicados, o novo ficheiro GeoPacK
 
 # Separador de Validação
 Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial.
-
 </p>
-<img width="443" height="383" alt="image" src="https://github.com/user-attachments/assets/3a5f0992-850a-478e-bc78-2883307d035b" />
+<img width="443" height="383" alt="image" src="https://github.com/user-attachments/assets/3a5f0992-850a-478e-bc78-2883307d035b" /
 </p>
 As Validações geometricas e não geométricas a efetuar sobre o ficheiro GeoPackage a submeter, abrangem os seguintes parâmetros:
 
 Validações não geométricas:
+
 * Formato 
 * Sistema de referência
 * Número e nome das camadas gráficas
@@ -122,9 +122,8 @@ Validações geométricas:
 * Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
-
 </p>
-<img width="443" height="460" alt="image" src="https://github.com/user-attachments/assets/1d05d0b2-acd7-431e-8e0d-656e64b84b90" />
+ <img width="453" height="397" alt="image" src="https://github.com/user-attachments/assets/778b643c-862c-42bb-b6ca-dcb8da63530a" />
 </p>
 
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
