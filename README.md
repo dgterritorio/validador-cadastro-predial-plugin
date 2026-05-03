@@ -36,7 +36,7 @@ Esta opção permite corrigir inconsistências topológicas nos polígonos.
 <img width="443" height="382" alt="image" src="https://github.com/user-attachments/assets/e5944d06-16f8-4a92-8b43-9cbeee3cd557" />
 </p>
 
-## Edição do ficheiro geopackage
+## Edição do ficheiro GeoPacKage
 
 Sobre o ficheiro Geopackage a corrigir são realizadas um conjunto de correções automáticas com o objetivo de eliminar o maior número de inconsistências possível.
 
@@ -72,10 +72,10 @@ Garantir que todas as geometrias representadas no ficheiro Geopackage a corrigir
   Em alguns casos, geometrias muito complexas podem exigir uma edição manual após a correção automática.
 
 ### Ajustar as geometrias dos polígonos
-O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o modo de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partiharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
+O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o método de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partiharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
 
 ### Ajustar as geometrias submetidas entre si
-Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geoPacKage a corrigir. É realizado um ajuste entre as geometrias da própria camada, e com todas as  restantes camadas.
+Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geoPacKage a corrigir. É realizado um ajuste entre as geometrias da própria camada, e com todas as restantes camadas.
 
 ### Ajustar as geometrias dos confinantes submetidos aos confinantes originais
 Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos confinantes originais.
@@ -84,16 +84,16 @@ Garantir que não existem diferenças inferiores a 0.001 metros entre os polígo
 Na situação de existirem registos sem geometria associada estes são eliminados.
 
 ### Ficheiro GeoPacKage corrigido
-Como resultado dos procedimentos automáticos aplicados, o novo ficheiro geoPacKage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
+Como resultado dos procedimentos automáticos aplicados, o novo ficheiro GeoPacKage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
 
 
 # Separador de Validação
-Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial
+Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial.
 
 </p>
 <img width="443" height="383" alt="image" src="https://github.com/user-attachments/assets/3a5f0992-850a-478e-bc78-2883307d035b" />
 </p>
-As Validações geometricas e não geométricas a efetuar sobre o ficheiro GeoPackage a submeter abrangem os seguintes parâmetros:
+As Validações geometricas e não geométricas a efetuar sobre o ficheiro GeoPackage a submeter, abrangem os seguintes parâmetros:
 
 Validações não geométricas:
 * Formato 
@@ -118,8 +118,8 @@ Validações geométricas:
 * Caso pretenda executar todas as validações deve ativar a opção “Ativa todas as opções de Validação”.
 * Caso pretenda apenas uma ou um conjunto de validações deve ativar apenas as opções pretendidas.
 * Por defeito a tolerância definida paras as duas validações é de 0.001 metros. Poderá sempre alterar.
-* Clicar em “Geopackage Original” para identificar o ficheiro geopackage com a representação dos dados originais.
-* Clicar em “Geopackage a Submeter” para Identificar o ficheiro geopackage com a representação dos novos dados.
+* Clicar em “Geopackage Original” para identificar o ficheiro GeoPacKage com a representação dos dados originais.
+* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 
@@ -129,8 +129,8 @@ Validações geométricas:
 
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
 * Os dados submetidos são adicionados ao grupo "submetidos" do projeto QGIS.
-* Quando são detetadas inconsistências do tipo “não geométricas” não são executadas as validações geométricas. Primeiro será necessário corrigir essas situações, e só depois submeter o ficheiro a   nova validação.
-* As inconsistências detetadas são materializadas em ficheiros geopackage, temporários, e adicionados ao grupo "resultados" do projeto QGIS.
+* Quando são detetadas inconsistências do tipo “não geométricas” não são executadas as validações geométricas. Primeiro será necessário corrigir essas situações, e só depois submeter o ficheiro a nova validação.
+* As inconsistências detetadas são materializadas em ficheiros GeoPacKage, temporários, e adicionados ao grupo "resultados" do projeto QGIS.
 
 ## Descrição de cada uma das validações
 ## Validações não geométricas
@@ -150,10 +150,10 @@ Verificar se no ficheiro submetido existem registos nas tabelas sem geometria as
 ### Número de confinantes submetidos igual ao número de confinantes originais
 Verificar se no ficheiro submetido o número de confinantes é igual ao número de confinantes do ficheiro original. O número de confinantes da camada confinantes submetida tem de ser igual ao número de confinantes da camada correspondente original.
 
-### Geopackage submetido igual ao original
+### GeoPacKage submetido igual ao original
 Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O ficheiro submetido tem de ser diferente do ficheiro original.
 
-#### Mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
+#### Exemplo da mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
 </p>
 <img width="394" height="288" alt="image" src="https://github.com/user-attachments/assets/a7ee8246-5cfd-4d39-b674-1884c063e08c" />
 </p>
