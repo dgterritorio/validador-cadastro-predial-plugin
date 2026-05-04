@@ -46,7 +46,7 @@ Correções automáticas:
  * Remover vértices duplicados.
  * Corrigir geometrias inválidas.
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
- * Converter as geometrias do GeoPacage de 3D para 2D.
+ * Converter as geometrias do GeoPacKage de 3D para 2D.
  * Remover registos sem geometria.
 
 ## Utilização do separador Edição
@@ -189,5 +189,3 @@ Verificar se as geometrias das camadas gráficas apresentam vértices muito pró
 ### Confinantes
 Verificar se as geometrias dos confinantes submetidos sofreram alterações nas estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. (não é considerada qualquer tipo de tolerância)
 Não são aceites ficheiros onde se verifique que as geometrias da camada gráfica “confinantes” tenham sofrido alterações em estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. 
-
-
