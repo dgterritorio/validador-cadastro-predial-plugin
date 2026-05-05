@@ -53,7 +53,7 @@ Correções automáticas:
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
 * Clicar em “Geopackage Original” para identificar o ficheiro GeoPackage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
-* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro GeoPackage com a representação dos novos dados a corrigir.
+* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro GeoPackage com a representação dos novos dados a corrigir. O ficheiro a corrigir não pode ter a mesma designação do ficheiro original.
 * Para executar clicar em “OK”.
 * Como resultado é adicionado ao projeto QGIS o novo GeoPackage corrigido.
 * O novo GeoPacKage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "GeoPackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
@@ -75,7 +75,7 @@ Na situação de existirem registos sem geometria associada estes são eliminado
 Elimina vértices (nós) duplicados de cada geometria, garantindo que não resultem geometrias não válidas. O procedimento implica a utilização de uma tolerância, neste caso 0, que determina quando os vértices são iguais.
 
 ### Ajustar as geometrias dos polígonos
-O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o método de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partiharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
+O ajuste é realizado com base numa tolerância (0.001 metros) e segundo o método de ajuste “Preferir alinhar nós, inserir vértices extra quando necessário”. Sempre que possível, fazer coincidir vértices entre os segmentos comuns de polígonos confinantes. Se os segmentos comuns não partilharem os mesmos vértices adiciona novos vértices de modo a assegurar a continuidade topológica entre polígonos (sem lacunas nem sobreposições).
 
 ### Ajustar as geometrias submetidas entre si
 Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros, entre todas as geometrias de polígonos no ficheiro geoPacKage a corrigir. É realizado um ajuste entre as geometrias da própria camada, e com todas as restantes camadas.
@@ -119,7 +119,7 @@ Validações geométricas:
 * Caso pretenda apenas uma ou um conjunto de validações deve ativar apenas as opções pretendidas.
 * Por defeito a tolerância definida paras as duas validações é de 0.001 metros. Poderá sempre alterar.
 * Clicar em “Geopackage Original” para identificar o ficheiro GeoPackage com a representação dos dados originais.
-* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackage com a representação dos novos dados.
+* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackage com a representação dos novos dados. O ficheiro a submeter não pode ter a mesma designação do ficheiro original.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 </p>
@@ -181,7 +181,7 @@ Verificar se as geometrias das camadas gráficas apresentam vértices muito pró
 Verificar se as geometrias das camadas gráficas submetidas não se encontram duplicadas. Não são aceites geometrias duplicadas.
 
 ### Sobreposições
-Verificar se as geometrias das camadas gráficas submetidas não se sobrepõem. Não são aceites sobreposições.
+Verificar se as geometrias das camadas gráficas submetidas não se sobrepõem. Nos polígonos confinantes, todos os vértices dos segmentos comuns devem coincidir. Quando esta situação não verifica, são detetadas dois tipos de inconsistências, sobreposições e vértices em falta. Não são aceites sobreposições.
 
 ### Lacunas
 Verificar se as geometrias das camadas gráficas submetidas (predio, confinantes, area_nao_cadastrada e dominio_publico) preenchem a totalidade da área das geometrias da camada original "predio". (considerar uma tolerância, definida pelo critério da espessura). Não são aceites lacunas acima da tolerância.
