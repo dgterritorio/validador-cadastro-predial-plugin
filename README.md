@@ -84,8 +84,8 @@ Garantir que não existem sobreposições nem lacunas, inferiores a 0.001 metros
 ### Ajustar as geometrias dos confinantes submetidos aos confinantes originais
 Garantir que não existem diferenças inferiores a 0.001 metros entre os polígonos dos confinantes submetidos e os confinantes originais. É realizado um ajuste entre as geometrias dos confinantes submetidos com as geometrias dos confinantes originais.
 
-### Ficheiro GeoPacKage corrigido
-Como resultado dos procedimentos automáticos aplicados, o novo ficheiro GeoPacKage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
+### Ficheiro GeoPackage corrigido
+Como resultado dos procedimentos automáticos aplicados, o novo ficheiro GeoPackage contém exclusivamente geometrias bidimensionais (2D) do tipo polígono.
 
 
 # Separador de Validação
@@ -119,8 +119,8 @@ Validações geométricas:
 * Caso pretenda executar todas as validações deve ativar a opção “Ativa todas as opções de Validação”.
 * Caso pretenda apenas uma ou um conjunto de validações deve ativar apenas as opções pretendidas.
 * Por defeito a tolerância definida paras as duas validações é de 0.001 metros. Poderá sempre alterar.
-* Clicar em “Geopackage Original” para identificar o ficheiro GeoPacKage com a representação dos dados originais.
-* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackage com a representação dos novos dados.
+* Clicar em “Geopackage Original” para identificar o ficheiro GeoPackage com a representação dos dados originais.
+* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPacKage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 </p>
@@ -130,7 +130,7 @@ Validações geométricas:
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
 * Os dados submetidos são adicionados ao grupo "submetidos" do projeto QGIS.
 * Quando são detetadas inconsistências do tipo “não geométricas” não são executadas as validações geométricas. Primeiro será necessário corrigir essas situações, e só depois submeter o ficheiro a nova validação.
-* As inconsistências detetadas são materializadas em ficheiros GeoPacKage, temporários, e adicionados ao grupo "resultados" do projeto QGIS.
+* As inconsistências detetadas são materializadas em ficheiros GeoPackage, temporários, e adicionados ao grupo "resultados" do projeto QGIS.
 
 ## Descrição de cada uma das validações
 ## Validações não geométricas
