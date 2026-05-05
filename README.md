@@ -47,17 +47,17 @@ Correções automáticas:
  * Ajustar as geometrias entre si do ficheiro GeoPackage a corrigir.
  * Ajustar as geometrias dos confinantes a corrigir aos confinantes originais.
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
- * Converter as geometrias do GeoPacKage de 3D para 2D.
+ * Converter as geometrias do GeoPackage de 3D para 2D.
 
 
 ## Utilização do separador Edição
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
-* Clicar em “Geopackage Original” para identificar o ficheiro GeoPacKage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
-* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro GeoPacKage com a representação dos novos dados a corrigir.
+* Clicar em “Geopackage Original” para identificar o ficheiro GeoPackage com a representação dos dados originais disponibilizado na    Plataforma de Conservação.
+* Clicar em “Geopackage a Corrigir” para Identificar o ficheiro GeoPackage com a representação dos novos dados a corrigir.
 * Para executar clicar em “OK”.
-* Como resultado é adicionado ao projeto QGIS o novo GeoPacKage corrigido.
-* O novo GeoPacKage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "GeopacKage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
+* Como resultado é adicionado ao projeto QGIS o novo GeoPackage corrigido.
+* O novo GeoPacKage é guardado na mesma pasta do "Geopackage a Corrigir", com a designação do "GeoPackage a Corrigir" +         "_corrigido.gpkg". Por exemplo: se o ficheiro a corrigir tem a designação "dados.gpkg" o nome do ficheiro corrigido terá a   designação "dados_corrigido.gpkg".
 
 ## Descrição sobre cada uma das correções:
 
@@ -120,7 +120,7 @@ Validações geométricas:
 * Caso pretenda apenas uma ou um conjunto de validações deve ativar apenas as opções pretendidas.
 * Por defeito a tolerância definida paras as duas validações é de 0.001 metros. Poderá sempre alterar.
 * Clicar em “Geopackage Original” para identificar o ficheiro GeoPackage com a representação dos dados originais.
-* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPacKage com a representação dos novos dados.
+* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackagee com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 </p>
@@ -172,6 +172,12 @@ intersecções, nem auto contatos). Não são aceites geometrias não válidas.
 Verificar se as geometrias das camadas gráficas submetidas não apresentam mais do que um polígono com o mesmo registo na tabela de atributos (multipart polygons).
 Não são aceites multipolígonos, apenas são aceites geometrias do tipo 'polygon'.
 
+### Vértices duplicados 
+Verificar se as geometrias das camadas gráficas apresentam vértices em duplicado. São considerados vértices em duplicado, quando na mesma geometria existam vértices com as mesmas coordenadas (coordenadas são exatamente iguais, utilizando como referência 15 casas decimais). Não são aceites geometrias com vértices duplicados abaixo da tolerância.
+
+### Vértices redundantes 
+Verificar se as geometrias das camadas gráficas apresentam vértices muito próximos. São considerados vértices redundantes, quando na mesma geometria existam vértices a uma distância inferior a 1 mm. Não são aceites geometrias com vértices redundantes.
+
 ### Duplicados
 Verificar se as geometrias das camadas gráficas submetidas não se encontram duplicadas. Não são aceites geometrias duplicadas.
 
@@ -180,12 +186,6 @@ Verificar se as geometrias das camadas gráficas submetidas não se sobrepõem. 
 
 ### Lacunas
 Verificar se as geometrias das camadas gráficas submetidas (predio, confinantes, area_nao_cadastrada e dominio_publico) preenchem a totalidade da área das geometrias da camada original "predio". (considerar uma tolerância, definida pelo critério da espessura). Não são aceites lacunas acima da tolerância.
-
-### Vértices duplicados 
-Verificar se as geometrias das camadas gráficas apresentam vértices em duplicado. São considerados vértices em duplicado, quando na mesma geometria existam vértices com as mesmas coordenadas (coordenadas são exatamente iguais, utilizando como referência 15 casas decimais). Não são aceites geometrias com vértices duplicados abaixo da tolerância.
-
-### Vértices redundantes 
-Verificar se as geometrias das camadas gráficas apresentam vértices muito próximos. São considerados vértices redundantes, quando na mesma geometria existam vértices a uma distância inferior a 1 mm. Não são aceites geometrias com vértices redundantes.
 
 ### Confinantes
 Verificar se as geometrias dos confinantes submetidos sofreram alterações nas estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. (não é considerada qualquer tipo de tolerância)
