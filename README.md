@@ -123,7 +123,7 @@ Validações geométricas:
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 </p>
- <img width="453" height="397" alt="image" src="https://github.com/user-attachments/assets/778b643c-862c-42bb-b6ca-dcb8da63530a" />
+ <img width="443" height="388" alt="image" src="https://github.com/user-attachments/assets/1b6e4aed-a475-42ce-932f-308830f6d8ae" />
 </p>
 
 * Os dados originais são adicionados ao grupo "originais" do projeto QGIS.
