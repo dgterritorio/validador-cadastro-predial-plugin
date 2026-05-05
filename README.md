@@ -33,8 +33,7 @@ O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois sep
 # Separador Edição
 Esta opção permite corrigir inconsistências topológicas nos polígonos.
 </p>
-<img width="443" height="382" alt="image" src="https://github.com/user-attachments/assets/e5944d06-16f8-4a92-8b43-9cbeee3cd557" />
-</p>
+<img width="443" height="396" alt="image" src="https://github.com/user-attachments/assets/a8098fdf-5904-42c7-9662-b9805e9bf5b8" />
 
 ## Edição do ficheiro GeoPackage
 
@@ -91,7 +90,7 @@ Como resultado dos procedimentos automáticos aplicados, o novo ficheiro GeoPack
 # Separador de Validação
 Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial.
 </p>
-<img width="443" height="383" alt="image" src="https://github.com/user-attachments/assets/3a5f0992-850a-478e-bc78-2883307d035b" /
+<img width="443" height="400" alt="image" src="https://github.com/user-attachments/assets/7b8e0add-5c4a-4a55-8673-a1823886b674" />
 </p>
 As Validações geometricas e não geométricas a efetuar sobre o ficheiro GeoPackage a submeter, abrangem os seguintes parâmetros:
 
@@ -190,3 +189,5 @@ Verificar se as geometrias das camadas gráficas submetidas (predio, confinantes
 ### Confinantes
 Verificar se as geometrias dos confinantes submetidos sofreram alterações nas estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. (não é considerada qualquer tipo de tolerância)
 Não são aceites ficheiros onde se verifique que as geometrias da camada gráfica “confinantes” tenham sofrido alterações em estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. 
+
+
