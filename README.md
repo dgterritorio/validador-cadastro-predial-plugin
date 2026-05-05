@@ -154,7 +154,7 @@ Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O f
 
 #### Exemplo da mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
 </p>
-<img width="394" height="288" alt="image" src="https://github.com/user-attachments/assets/a7ee8246-5cfd-4d39-b674-1884c063e08c" />
+<img width="443" height="298" alt="image" src="https://github.com/user-attachments/assets/97e0842b-3527-4e13-a93b-042fe81a21f7" />
 </p>
 
 ## Validações geométricas
