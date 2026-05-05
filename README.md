@@ -48,7 +48,6 @@ Correções automáticas:
  * Converter as geometrias do tipo multipolígono para o tipo polígono.
  * Converter as geometrias do GeoPackage de 3D para 2D.
 
-
 ## Utilização do separador Edição
 * Aceder ao separador Edição.
 * Ativar a opção “Corrigir os dados”.
