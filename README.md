@@ -62,7 +62,7 @@ Correções automáticas:
 ## Descrição sobre cada uma das correções:
 
 ### Corrigir geometrias inválidas
-Garantir que todas as geometrias representadas no ficheiro GeopacKage a corrigir são válidas.
+Garantir que todas as geometrias representadas no ficheiro GeoPackage a corrigir são válidas.
   Tipos de erros mais comuns:
   * Auto intersecção
   * Auto contato
@@ -120,7 +120,7 @@ Validações geométricas:
 * Caso pretenda apenas uma ou um conjunto de validações deve ativar apenas as opções pretendidas.
 * Por defeito a tolerância definida paras as duas validações é de 0.001 metros. Poderá sempre alterar.
 * Clicar em “Geopackage Original” para identificar o ficheiro GeoPackage com a representação dos dados originais.
-* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackagee com a representação dos novos dados.
+* Clicar em “Geopackage a Submeter” para Identificar o ficheiro GeoPackage com a representação dos novos dados.
 * Para executar clicar em “OK”.
 * Como resultado é enviada uma mensagem para o monitor com o resumo dos resultados.
 </p>
