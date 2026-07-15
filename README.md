@@ -189,4 +189,16 @@ Verificar se as geometrias das camadas gráficas submetidas (predio, confinantes
 Verificar se as geometrias dos confinantes submetidos sofreram alterações nas estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. (não é considerada qualquer tipo de tolerância)
 Não são aceites ficheiros onde se verifique que as geometrias da camada gráfica “confinantes” tenham sofrido alterações em estremas que não são comuns ao prédio a conservar nem são comuns entre confinantes. 
 
+### Área não cadastrada
+Verificar se as geometrias submetidas da camada gráfica area_nao_cadastrada ultrapassam os limites do prédio original.
 
+### Domínio público
+Verificar se as geometrias submetidas da camada gráfica dominio_publico ultrapassam os limites do prédio original. 
+
+### Sobreposição com prédios cadastrados
+Verificar se as geometrias submetidas da camada gráfica predio se sobrepõem com algum prédio existente na carta cadastral que não faça parte dos dados originais. Nesta verificação é utilizada a informação vetorial de cadastro predial através do serviço WFS (WWeb Feature Service) disponibilizado no âmbito da Diretiva Inspire no SNIG.
+
+## Funcionalidades
+
+### Declarações de confinantes
+Identificar se existem alterações nas estremas dos prédios confinantes. Quando existem alterações nas estremas do prédios confinantes é identificada a necessidade de declaração de confinantes bem como do respetivo nic.
