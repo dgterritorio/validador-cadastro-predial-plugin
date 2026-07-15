@@ -33,7 +33,9 @@ O plugin tem duas funcionalidades distintas e, por isso, tem desde logo dois sep
 # Separador Edição
 Esta opção permite corrigir inconsistências topológicas nos polígonos.
 </p>
-<img width="443" height="396" alt="image" src="https://github.com/user-attachments/assets/a8098fdf-5904-42c7-9662-b9805e9bf5b8" />
+<img width="443" height="396" alt="image" src="https://github.com/user-attachments/assets/deba743c-1950-4640-b342-b209a1c708ac" />
+
+
 
 ## Edição do ficheiro GeoPackage
 
@@ -89,7 +91,7 @@ Como resultado dos procedimentos automáticos aplicados, o novo ficheiro GeoPack
 # Separador de Validação
 Esta opção permite identificar os critérios que não estão a ser cumpridos, e que estão definidos na etapa 5 - Validação, da Plataforma de Conservação Cadastral Predial.
 </p>
-<img width="443" height="400" alt="image" src="https://github.com/user-attachments/assets/7b8e0add-5c4a-4a55-8673-a1823886b674" />
+<img width="443" height="400" alt="image" src="https://github.com/user-attachments/assets/9a1ae25b-74f0-4866-a7e5-e889ec87b58c" />
 </p>
 As Validações geometricas e não geométricas a efetuar sobre o ficheiro GeoPackage a submeter, abrangem os seguintes parâmetros:
 
@@ -154,6 +156,12 @@ Verificar se no ficheiro submetido é exatamente igual ao ficheiro original. O f
 #### Exemplo da mensagem enviada para o monitor no caso de existirem inconsistências não geométricas
 </p>
 <img width="443" height="298" alt="image" src="https://github.com/user-attachments/assets/97e0842b-3527-4e13-a93b-042fe81a21f7" />
+</p>
+</p>
+
+#### Exemplo da mensagem enviada para o monitor com a identificação do nº de declarações de confinantes e respetivos nic
+</p>
+<img width="488" height="593" alt="image" src="https://github.com/user-attachments/assets/92d0b68c-0c5c-4d29-a448-a4462d00977a" />
 </p>
 
 ## Validações geométricas
