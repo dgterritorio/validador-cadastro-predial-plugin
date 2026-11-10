@@ -11,7 +11,7 @@ Este plugin auxilia o Técnico de Cadastro Predial na preparação do ficheiro G
 O plugin deve ser instalado numa versão do QGIS 3.40(LTR) ou superior.
 
 ## Baixe o plugin CadastroPredialDGT
-O plugin está disponível em [CadastroPredialDGT]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V2.0/CadastroPredialDGT.zip)
+O plugin está disponível em [CadastroPredialDGT]( https://github.com/dgterritorio/validador-cadastro-predial-plugin/releases/download/V2.5/CadastroPredialDGT.zip)
 
 ## Instalar o plugin
 Para instalar o plugin, escolha no menu a opção Plugins → Gerir e instalar plugins...
